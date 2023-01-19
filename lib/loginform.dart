@@ -113,19 +113,19 @@ class _LoginFormState extends State<LoginForm> {
     );
   }
 
-
-
   
   Widget buildLoginBtn() {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 30),
+      padding: const EdgeInsets.symmetric(vertical: 25),
       width: double.infinity,
         child: ElevatedButton(
-          onPressed: (){},
-          child: const Text("LOGIN"),
+          child: const Text('LOGIN'),
+          onPressed: () {},
           style: ElevatedButton.styleFrom(
+              elevation: 5,
+              padding: EdgeInsets.all(15),
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(50),
+                borderRadius: BorderRadius.circular(15),
               ),
             backgroundColor: Colors.white
           )
